@@ -1,11 +1,11 @@
-import Menu from "./Menu";
+import Menu from './Menu'
 
-function Header() {
+function Header(){
     return (
         <>
-    <Menu />
+        <Menu />
         </>
-    );
+    )
 }
 
 export default Header;
