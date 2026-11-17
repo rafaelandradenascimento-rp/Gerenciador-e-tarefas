@@ -1,5 +1,5 @@
 import './index.css';
-import contatos from '../../mook/contatos';
+import contatos from '../../mook/contatos'
 import { Link } from 'react-router-dom';
 
 function ListarContatos() {
