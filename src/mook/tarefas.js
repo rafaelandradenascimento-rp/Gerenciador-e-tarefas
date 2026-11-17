@@ -1,136 +1,75 @@
-
 const tarefas = [
     {
         id: 1,
-        titulo: "Implementar a Tarefa de login",
-        descrição: "Tela de login deve seguir os conceitos UX e UI",
-        responsavel: "Lucia",
+        titulo: 'Implementar a Tela de Login',
+        descricao: 'Desenvolver a interface de autenticação aplicando boas práticas de UX/UI. Deve incluir campos para e-mail e senha, suporte a feedbacks visuais de erro, opção de "lembrar-me" e integração visual com a paleta de cores padrão do sistema.',
+        responsavel: 'Lucia'
     },
     {
         id: 2,
-        titulo: "Implementar a Tarefa de lista de tarefa",
-        descrição: "Buscar os dados de JSON de tarefas",
-        responsavel: "Vitor",
+        titulo: 'Implementar a Tela de Listar Tarefas',
+        descricao: 'Construir o componente responsável por consumir e renderizar a lista de tarefas a partir dos dados do JSON. A tela deve apresentar uma tabela com efeitos de hover, cabeçalho estilizado e links para navegação até o detalhamento individual de cada registro.',
+        responsavel: 'Khyara'
     },
     {
         id: 3,
-        titulo: "Estudar para a prova de matemática",
-        descrição: "Revisar equações, funções e porcentagem",
-        responsavel: "Mariana",
+        titulo: 'Criar Endpoint de Autenticação',
+        descricao: 'Desenvolver a API REST em Node.js para validação de credenciais e geração de tokens JWT. O endpoint deve validar os dados enviados, tratar falhas de login com mensagens apropriadas e retornar o token com tempo de expiração configurável.',
+        responsavel: 'Carlos'
     },
     {
         id: 4,
-        titulo: "Organizar o quarto",
-        descrição: "Arrumar a cama, organizar a mesa e guardar as roupas",
-        responsavel: "Carlos",
+        titulo: 'Ajustar Responsividade do Dashboard',
+        descricao: 'Corrigir falhas de quebra de layout e rolagem horizontal em dispositivos móveis e tablets. Ajustar o grid principal e as tabelas para garantir uma navegação fluida em telas com largura inferior a 768px.',
+        responsavel: 'Mariana'
     },
     {
         id: 5,
-        titulo: "Fazer compras do mercado",
-        descrição: "Comprar frutas, verduras, arroz, feijão e produtos de limpeza",
-        responsavel: "Fernanda",
+        titulo: 'Configurar Banco de Dados PostgreSQL',
+        descricao: 'Estruturar o banco de dados criando as tabelas de usuários, tarefas e permissões. Escrever e rodar as migrations iniciais, além de definir os relacionamentos de chave estrangeira e os índices para otimização de consultas.',
+        responsavel: 'Rafael'
     },
     {
         id: 6,
-        titulo: "Fazer atividade física",
-        descrição: "Realizar uma caminhada de pelo menos 30 minutos",
-        responsavel: "Rafael",
+        titulo: 'Integração com Gateway de Pagamento',
+        descricao: 'Implementar o fluxo completo de checkout permitindo pagamentos via Pix (com geração de QR Code dinâmico) e cartão de crédito. Incluir tratamento para confirmação via webhook e exibição do status da transação em tempo real.',
+        responsavel: 'Beatriz'
     },
     {
         id: 7,
-        titulo: "Ler um livro",
-        descrição: "Ler pelo menos 20 páginas do livro escolhido",
-        responsavel: "Beatriz",
+        titulo: 'Desenvolver Modal de Cadastro de Tarefas',
+        descricao: 'Criar componente de modal contendo formulário para inserção de novas tarefas. Utilizar a biblioteca React Hook Form para gerenciar o estado dos inputs e aplicar regras de validação para impedir o envio de campos obrigatórios em branco.',
+        responsavel: 'Lucas'
     },
     {
         id: 8,
-        titulo: "Preparar apresentação",
-        descrição: "Criar os slides para a apresentação do trabalho",
-        responsavel: "Lucas",
+        titulo: 'Escrever Testes Unitários no Front-end',
+        descricao: 'Garantir a estabilidade e cobertura de testes dos componentes vitais da aplicação utilizando Jest e React Testing Library. Focar nos cenários de renderização de listas, submissão de formulários e estados de carregamento.',
+        responsavel: 'Fernanda'
     },
     {
         id: 9,
-        titulo: "Pagar as contas",
-        descrição: "Verificar e pagar as contas que vencem durante a semana",
-        responsavel: "Gabriel",
+        titulo: 'Configurar Pipeline de CI/CD',
+        descricao: 'Criar rotina automatizada via GitHub Actions para executar a suíte de testes unitários, realizar o build da aplicação e fazer o deploy automático no ambiente de staging a cada push na branch principal.',
+        responsavel: 'Thiago'
     },
     {
         id: 10,
-        titulo: "Planejar a viagem",
-        descrição: "Pesquisar hospedagem, transporte e lugares para visitar",
-        responsavel: "Amanda",
+        titulo: 'Otimizar Performance de Imagens',
+        descricao: 'Revisar e converter todos os ativos de imagem do projeto para o formato WebP. Aplicar carregamento assíncrono (lazy loading) nos componentes de galeria para reduzir o tempo inicial de carregamento da página.',
+        responsavel: 'Aline'
     },
     {
         id: 11,
-        titulo: "Preparar o jantar",
-        descrição: "Escolher uma receita e preparar o jantar para a família",
-        responsavel: "Pedro",
+        titulo: 'Implementar Filtro e Busca na Listagem',
+        descricao: 'Adicionar funcionalidade de busca dinâmica na tela de listagem. O usuário deve conseguir filtrar a tabela em tempo real digitando o título, selecionando o responsável em um dropdown ou escolhendo o status da tarefa.',
+        responsavel: 'Gabriel'
     },
     {
         id: 12,
-        titulo: "Levar o cachorro para passear",
-        descrição: "Passear com o cachorro durante pelo menos 30 minutos",
-        responsavel: "Juliana",
-    },
-    {
-        id: 13,
-        titulo: "Limpar a cozinha",
-        descrição: "Lavar a louça, limpar a pia e organizar os armários",
-        responsavel: "Thiago",
-    },
-    {
-        id: 14,
-        titulo: "Marcar consulta médica",
-        descrição: "Entrar em contato com a clínica e agendar uma consulta",
-        responsavel: "Camila",
-    },
-    {
-        id: 15,
-        titulo: "Planejar o orçamento mensal",
-        descrição: "Anotar receitas, despesas e definir o limite de gastos do mês",
-        responsavel: "Diego",
-    },
-    {
-        id: 16,
-        titulo: "Fazer manutenção da bicicleta",
-        descrição: "Verificar os pneus, freios e corrente da bicicleta",
-        responsavel: "André",
-    },
-    {
-        id: 17,
-        titulo: "Organizar documentos",
-        descrição: "Separar documentos importantes e guardar tudo em local seguro",
-        responsavel: "Larissa",
-    },
-    {
-        id: 18,
-        titulo: "Preparar currículo",
-        descrição: "Atualizar experiências profissionais, cursos e informações pessoais",
-        responsavel: "Renato",
-    },
-    {
-        id: 19,
-        titulo: "Aprender uma nova receita",
-        descrição: "Escolher uma receita diferente e preparar durante o fim de semana",
-        responsavel: "Isabela",
-    },
-    {
-        id: 20,
-        titulo: "Organizar uma festa",
-        descrição: "Definir local, convidados, comida e decoração para o evento",
-        responsavel: "Bruno",
-    },
-    {
-        id: 21,
-        titulo: "Cuidar das plantas",
-        descrição: "Regar as plantas e verificar se alguma precisa de cuidados especiais",
-        responsavel: "Sofia",
-    },
-    {
-        id: 22,
-        titulo: "Fazer trabalho da faculdade",
-        descrição: "Pesquisar o tema e finalizar o trabalho para entregar no prazo",
-        responsavel: "Mateus",
+        titulo: 'Documentar Endpoints da API',
+        descricao: 'Escrever a documentação técnica completa de todos os endpoints da API utilizando Swagger/OpenAPI. Detalhar parâmetros de entrada, headers de autenticação requeridos e exemplos de respostas para status 200, 400 e 500.',
+        responsavel: 'Patricia'
     }
 ];
 

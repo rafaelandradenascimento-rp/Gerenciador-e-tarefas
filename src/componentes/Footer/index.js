@@ -10,7 +10,7 @@ function Footer(){
             </div>
             <div className="desenvolvedor">
                 <p className='nomeDesenvolvedor'>
-                    Desenvolvido por: Rafael De Andrade - 2026
+                    Desenvolvido por: Rafael Florindo - 2026
                 </p>
             </div>
         </footer>

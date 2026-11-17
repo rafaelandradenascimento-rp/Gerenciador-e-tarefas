@@ -12,8 +12,8 @@ function Sobre() {
             </header>
             <section>
                 <div className='boxfotoPerfil'>
-                    <img className="imgfotoPerfil" src={fotoPerfil} />
-                    <p>Rafael De Andrade</p>
+                    <img className="imgfotoPerfil" src={fotoPerfil} alt="foto perfil"/>
+                    <p>Rafael Florindo</p>
           
                     <a 
                         href="https://www.linkedin.com/in/rafaelflorindo" 
@@ -26,24 +26,24 @@ function Sobre() {
                 </div>
                 <div className='habilidades'>
                     <article>
-                        <h2>Games</h2>
-                        <img src={habilidadeDesenvolvedor}/>
+                        <h2>Desenvolvedor</h2>
+                        <img src={habilidadeDesenvolvedor}  alt= "habilidade desnvolvedor"/>
                         <p className='descricao'>
-                        Gosto de jogar jogos de carro e de futebol como como efootbal e car pixel 
+                        Profissional de tecnologia com ampla experiência no desenvolvimento full-cycle de aplicações, entregando ecossistemas integrados para web, mobile e desktop.
                         </p>
                     </article>
                     <article>
-                        <h2>Esportes</h2>
-                        <img src={habilidadeEletrecista} />
+                        <h2>Eletrecista</h2>
+                        <img src={habilidadeEletrecista} alt="habilidade eletricista" />
                         <p className='descricao'>
-                        Gosta de esportes como Futebol Basquete e Automoblismo e tenho como inspiração Neymar Jr e Lewis Hamilton. 
+                        Prestação de serviços de inspeção, pequenos reparos e manutenção corretiva e preventiva em quadros de distribuição elétrica residenciais e comerciais.
                         </p>
                     </article>
                     <article>
-                        <h2>Conhecimento Automobilistíco</h2>
-                        <img src={habilidadeMusica} />
+                        <h2>Música</h2>
+                        <img src={habilidadeMusica} alt="habilidade musica" />
                         <p className='descricao'>
-                        Gosto de carros desde criança e quero e sempre quero aprender mais sobre mecanica automotiva e modelos e tipos de carros como esportivo classico popular e importados.                        </p>
+                        Músico profissional com 10 anos de trajetória no violino e 3 anos de experiência como instrutor, oferecendo aulas personalizadas e apresentações de alto nível.                        </p>
                     </article>
                 </div>
             </section>
